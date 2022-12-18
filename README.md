@@ -36,8 +36,9 @@ class patient_detailsAdmin(admin.ModelAdmin):
 
 
 ## OUTPUT
+###admin side outout
+![adminoutput](https://user-images.githubusercontent.com/118344695/208288553-e1ab5add-7fc3-43b5-9749-e3226c7af620.png)
 
-![admin side output](adminoutput.png)
 
 
 ## RESULT
