@@ -9,18 +9,21 @@ Include your ER diagram here
 
 ## DESIGN STEPS
 
-### STEP 1:
+### STEP 1: 
+fork the repository and then clone it into the theia ide
 
 ### STEP 2:
+create django project then create app and superuser account
 
 ### STEP 3:
-
-Write your own steps
+make changes in settings and type your design code in models and the code in admin and then run the server.
+## STEP 4:
+login on admin with superuser account and populate the record.
 
 ## PROGRAM
 ```
 from django.db import models
-from django.contrib import admin
+from django.contrib import admin 
 class patient_details(models.Model):
     patientid = models.CharField(primary_key = True,max_length=8)
     patientname = models.CharField(max_length=100)
