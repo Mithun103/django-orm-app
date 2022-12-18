@@ -18,12 +18,27 @@ Include your ER diagram here
 Write your own steps
 
 ## PROGRAM
+```
+from django.db import models
+from django.contrib import admin
+class patient_details(models.Model):
+    patientid = models.CharField(primary_key = True,max_length=8)
+    patientname = models.CharField(max_length=100)
+    age = models.IntegerField()
+    mobileno = models.IntegerField()
+    diseases = models.CharField(max_length=200)
+    address=models.CharField(max_length=200)
 
-Include your code here
+
+class patient_detailsAdmin(admin.ModelAdmin):
+    list_display = ('patientid','patientname','age','mobileno','diseases','address')
+```
+
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![admin side output](adminoutput.png)
 
 
 ## RESULT
+the program executed successfully
